@@ -1,0 +1,94 @@
+
+.full{
+	height:100vh;
+}
+.vert-center{
+	padding-top:15%;
+}
+#index-view{
+	background:url('/Syllables_Factory/img/bg.jpg');
+	background-size:cover;
+}
+.level-indicator{
+	border-radius: 63px;
+display: inline;
+border: 0px solid #FFF;
+background-color: #F0F8FF;
+padding: 8px;
+margin: 3px;
+}
+.score-indicator{
+	border-radius:42px;
+	display: inline;
+	border:0px solid white ;
+	background-color: aliceblue;
+	color:aliceblue;
+	padding: 8px;
+margin: 3px;
+}
+#scoreboard{
+	display: inline
+}
+#game-view{
+	background-color: #669999;
+}
+#canon-word{
+	width:60%;
+}
+.word-arena{
+min-height: 30vh;
+margin: 20px 0px;
+}
+.title{
+	font-size:50px;
+	color: white;
+	font-weight: bold;
+}
+.round-btn{
+	background-color: #B6EC83;
+	border-radius: 50px;
+	border: 2px solid #3DAA00;
+	padding: 25px;;
+}
+#btn-play{
+	padding:20px 70px;
+}
+.bucket-img{
+	width:100%;
+	height:auto;
+	margin-top: 100px;
+}
+
+#show-level{
+
+}
+#score-points{
+border: 1px solid #ADFF2F;
+background: none repeat scroll 0% 0% #7FFFD4;
+font-size: 25px;
+margin-top: 22px;
+color: #008000;
+border-radius: 22px;
+padding: 15px 0px;
+}
+#fire-button{
+	padding: 20px 40px;
+}
+.level-indicator{
+
+}
+.click-answer{
+
+}
+#message-box{
+	background: burlywood;
+padding: 20px 0px;
+position: absolute;
+width: 40%;
+left: 50%;
+top: 150px;
+border: 0px solid white;
+border-radius: 32px;
+visibility: hidden;
+}
+

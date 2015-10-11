@@ -1,0 +1,28 @@
+.body{
+	background:url('/Syllables_Factory/img/bg.jpg');
+}
+.full{
+	height:100vh;
+}
+.vert-center{
+	padding-top:15%;
+}
+#index-view{
+	background:url('/Syllables_Factory/img/bg.jpg');
+}
+.title{
+	font-size:50px;
+}
+#btn-play{
+	padding:20px 70px;
+}
+#show-level{
+
+}
+.level-indicator{
+
+}
+.click-answer{
+
+}
+

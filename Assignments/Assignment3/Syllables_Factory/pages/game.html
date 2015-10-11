@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Syllables Factory</title>
+		<meta charset="UTF-8">
+		<link href="http://fonts.googleapis.com/css?family=Anton" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="/Syllables_Factory/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="/Syllables_Factory/css/style.css">
+		<script type="text/javascript" src="/Syllables_Factory/js/jquery.js"></script>
+		<script type="text/javascript" src="/Syllables_Factory/js/script.js"></script> 
+	</head>
+	<body>
+
+		<div id="game-view" class="container-fluid full">
+			<div id="show-level" class="col-lg-6 col-md-6 col-xs-6 col-sm-6">
+				<h3>LEVEL</h3>
+				<div id="level-1" class="level-indicator">1</div>
+				<div id="level-2" class="level-indicator">2</div>
+				<div id="level-3" class="level-indicator">3</div>
+			</div>
+
+			<div id="show-score" class="col-lg-5 col-md-5 col-xs-5 col-sm-5">
+				<center id="scoreboard" class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+					<h3>SCORE-BOARD</h3>
+				
+				</center>
+				<center id="scoresheet" class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+					<div id="scoresheet-1" class="score-indicator">X</div>
+					<div id="scoresheet-2" class="score-indicator">X</div>
+					<div id="scoresheet-3" class="score-indicator">X</div>
+					<div id="scoresheet-4" class="score-indicator">X</div>
+					<div id="scoresheet-5" class="score-indicator">X</div>
+					<div id="scoresheet-6" class="score-indicator">X</div>
+					<div id="scoresheet-7" class="score-indicator">X</div>
+					<div id="scoresheet-8" class="score-indicator">X</div>
+					<div id="scoresheet-9" class="score-indicator">X</div>
+					<div id="scoresheet-10" class="score-indicator">X</div>
+
+				</center>
+				
+				
+			</div>
+
+			<div id="score-points" class="col-lg-1 col-md-1 col-xs-1 col-sm-1">
+					<center><span id="score-display">0</span></center>
+			</div>
+				
+			<div id="timer" class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+				<center><span id="timer-counter">--:--</span></center>
+						
+			</div>
+			<div id = "message-box" class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+			</div>
+			<div class="word-arena col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+					<img id="canon-word" src="/Syllables_Factory/img/canon.png">
+					<button id="fire-button" onclick="fireWord()">FIRE</button>
+				</div>
+				<div id="word-container" class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+				
+				</div>
+				<div id="word-dumper" class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+				
+				</div>
+			</div>
+
+			<!--Buttons and Boxes goes down -->
+			
+				
+			<div class="col-lg-offset-4 col-md-offset-4 col-sm-offset-4 col-xs-offset-4">
+				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+					<center><button class="round-btn" id="click-1" onclick="Answer(1)">1</button></center>
+					<img class="bucket-img" src="/Syllables_Factory/img/box.png"/>
+				</div>	
+				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+					<center><button class="round-btn" id="click-2" onclick="Answer(2)">2</button></center>
+					<img class="bucket-img" src="/Syllables_Factory/img/box.png"/>
+				</div>
+				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+					<center><button class="round-btn" id="click-3" onclick="Answer(3)">3</button></center>
+					<img class="bucket-img" src="/Syllables_Factory/img/box.png"/>
+				</div>
+				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+					<center><button class="round-btn" id="click-4" onclick="Answer(4)">4</button></center>
+					<img class="bucket-img" src="/Syllables_Factory/img/box.png"/>
+				</div>
+				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+					<center><button class="round-btn" id="click-5" onclick="Answer(5)">5</button></center>
+					<img class="bucket-img" src="/Syllables_Factory/img/box.png"/>
+				</div>
+				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+					<center><button class="round-btn" id="click-6" onclick="Answer(6)">6</button></center>
+					<img class="bucket-img" src="/Syllables_Factory/img/box.png"/>
+				</div>	
+							
+				</div>
+				<div id="disp">
+				</div>
+			</div>
+		</div>
+
+
+		<footer><center>Developed by <abbr title="Developed for SEFP Assignment-3">Sahal Sajjad</abbr></center></footer>
+	</body>
+</html>

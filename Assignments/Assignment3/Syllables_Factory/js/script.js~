@@ -1,0 +1,74 @@
+$(document).ready(function(){
+var bucket1=[], bucket2=[], bucket3=[], bucket4=[], bucket5=[], bucket6=[];
+var xmlhttp = new XMLHttpRequest();
+var jsonurl = "/Syllables_Factory/json/malayalam.txt";
+
+function dataLoader(){
+	words = []
+	xmlhttp.onreadystatechange = function() {
+		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+			text = xmlhttp.responseText;
+			var jsonobj = $.parseJSON(text);
+			var count = jsonobj.count, wordlist = jsonobj.text, words = [], syllables = []; 
+			for( i = 0; i < count; i++){
+				words.push(wordlist[i][0]);
+				syllables.push(wordlist[i][1]);
+			}
+    		}
+	}
+	alert(words);
+	xmlhttp.open("GET", jsonurl, true);
+	xmlhttp.send();
+	alert(words);
+	return [words, syllables];
+}
+
+window.Answer = function(clicked){
+	var word="test", id, bucket;
+	switch(clicked){
+		case 1:		
+                	bucket1.push(word);
+			id="buck1";
+			bucket=bucket1;
+		break;
+		case 2:
+			bucket2.push(word);
+			id="buck2";
+			bucket=bucket2;
+		break;
+		case 3:
+			bucket3.push(word);
+			id="buck3";	
+			bucket=bucket3;
+		break;
+		case 4:
+			bucket4.push(word);
+			id="buck4";
+			bucket=bucket4;
+		break;
+		case 5:
+			bucket5.push(word);
+			id="buck5";
+			bucket=bucket5;
+		break;
+		case 6:
+			bucket6.push(word);
+			id="buck6";
+			bucket=bucket6;
+		break;
+		default:
+		break;
+	}
+	
+	dataLoader();
+	
+}
+
+function gameRunner(){
+
+}
+function randomIndex(n, embargo){
+	var returned = Math.floor((Math.random() * n) + 1);
+	 
+}
+});
