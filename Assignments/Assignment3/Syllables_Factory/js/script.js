@@ -49,7 +49,7 @@ window.fireWord = function(){
     else{
     	window.answered = false;
 	    chosenword  = chooseWord();
-	    document.getElementById('word-container').innerHTML= "<h1>"+chosenword[0]+ "</h1>"+"<h3>"+chosenword[1]+"</h3>";
+	    document.getElementById('word-container').innerHTML= "<h1>"+chosenword[0]+ "</h1>";
 	    return chosenword;
 	}
 }
