@@ -43,13 +43,22 @@ window.fireWord = function(){
 	clearMessage();
 	window.answerunlock = true;
 	window.turn += 1;
+	
     if(window.answered == false){
+    	window.turn -= 1;
     	alert("Please select an Answer!");
     }
     else{
     	window.answered = false;
 	    chosenword  = chooseWord();
 	    document.getElementById('word-container').innerHTML= "<h1>"+chosenword[0]+ "</h1>";
+	    $('#word-container').css('position','absolute').css('left','0').animate({left: "500px"});
+	    if(window.turn > 10 && window.level == 1){
+			levelTwo();
+		}
+		else if(window.turn > 10 && window.level == 2){
+			levelThree();
+		}
 	    return chosenword;
 	}
 }
@@ -61,13 +70,16 @@ window.Answer = function(clicked){/* Tested OK */
 			updateScore();
 			window.answerunlock = false;
 			displayMessage();
+
 			window.scoresheet[window.turn-1] = 1;
 		}
 		else{
-			window.message = "Sorry! Incorrect Answer!";
-			displayMessage();
-			window.answerunlock = false;
-			window.scoresheet[window.turn-1] = 2;
+				if(window.answerunlock){
+					window.message = "Sorry! Incorrect Answer!";
+					displayMessage();
+					window.answerunlock = false;
+					window.scoresheet[window.turn-1] = 2;
+				}
 		}
 		scoreSheetFiller();
 }
@@ -84,6 +96,39 @@ window.clearMessage = function(){ /*Tested OK */
 	window.message = "";
 	$("#message-box").css('visibility','hidden');
 
+}
+function levelTwo(){
+	window.level = 2;
+	window.dictionarysize = 15;
+	window.words = [];
+	window.syllables = [];
+	window.permitIndexes = [];
+	window.score = 0;
+	window.answered = true;
+	window.answerunlock = true;
+	window.dataloaded = false;
+	window.message = "";
+	window.turn = 0;
+	window.scoresheet = [0,0,0,0,0,0,0,0,0,0];
+	dataLoader();
+	fireWord();
+
+}
+function levelThree(){
+	window.level = 3;
+	window.dictionarysize = 15;
+	window.words = [];
+	window.syllables = [];
+	window.permitIndexes = [];
+	window.score = 0;
+	window.answered = true;
+	window.answerunlock = true;
+	window.dataloaded = false;
+	window.message = "";
+	window.turn = 0;
+	window.scoresheet = [0,0,0,0,0,0,0,0,0,0];
+	dataLoader();
+	fireWord();
 }
 function levelFiller(){ /* Tested OK */
 
