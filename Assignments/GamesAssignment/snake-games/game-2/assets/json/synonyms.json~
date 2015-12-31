@@ -1,0 +1,58 @@
+{
+		"game_description":"Select the synonym",
+		"1":{
+			 "word":"നിണം",
+			 "correctword":"രക്തം",
+			 "wrong1":"രാത്രി",
+			 "wrong2":"പട്ടി"
+			},
+		"2":{
+			 "word":"നായ",
+			 "correctword":"പട്ടി",
+			 "wrong1":"കുട്ടി",
+			 "wrong2":"രാത്രി"
+			},
+		"3":{
+			 "word":"രാത്രി",
+			 "correctword":"നിശ",
+			 "wrong1":"കുട്ടി",
+			 "wrong2":"പകൽ"
+			},
+		"4":{
+			 "word":"പകൽ",
+			 "correctword":"ദിനം",
+			 "wrong1":"രാത്രി",
+			 "wrong2":"രക്തം"
+			},
+		"5":{
+			 "word":"കുട്ടി",
+			 "correctword":"കിടാവ് ",
+			 "wrong1":"",
+			 "wrong2":""
+			},
+		"6":{
+			 "word":"വണ്ടി",
+			 "correctword":"വാഹനം",
+			 "wrong1":"",
+			 "wrong2":""
+			},
+		"7":{
+			 "word":"",
+			 "correctword":"",
+			 "wrong1":"",
+			 "wrong2":""
+			},
+		"8":{
+			 "word":"",
+			 "correctword":"",
+			 "wrong1":"",
+			 "wrong2":""
+			},
+		"9":{
+			 "word":"ശബ്ദം",
+			 "correctword":"",
+			 "wrong1":"",
+			 "wrong2":""
+			}
+
+}
